@@ -15,6 +15,9 @@ function App() {
         <div className='col pt-5 text-center'><span className="circle"></span>
 </div>
        </div>
+       <div className='row pts'>
+        <div className='col banner'></div>
+       </div>
     </>
   )
 }
