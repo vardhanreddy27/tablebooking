@@ -8,7 +8,8 @@ function App() {
       <div className='col-6'><BsThreeDotsVertical size={30} style={{float: "right"}}/></div>
     </div>  
     <div className='row'>
-      <div className='col-6'> </div>
+    <div className='col-12'><h5 className="ps-2 text-secondary pt-2">Book a table</h5> </div>
+    <div className='col-12'><h2 className="ps-2 ">Absolute Barbecue</h2> </div>
        </div>
     </>
   )
