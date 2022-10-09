@@ -16,7 +16,9 @@ function App() {
 </div>
        </div>
        <div className='row pts'>
-        <div className='col banner'></div>
+        <div className='col banner'>
+          <h2 className='cp'>Schedule a visit</h2>
+        </div>
        </div>
     </>
   )
