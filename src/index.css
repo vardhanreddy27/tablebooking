@@ -1,2 +1,5 @@
-.div{overflow: auto!important;
-overflow-y: hidden!important;}
+body {
+    overflow: -moz-scrollbars-vertical;
+    overflow-x: hidden;
+    overflow-y: auto;
+    }
