@@ -1,7 +1,12 @@
-import React from 'react'
 import { IoMdArrowRoundBack } from 'react-icons/io';
 import { BsThreeDotsVertical } from 'react-icons/bs';
+import React, { useState } from "react";
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
+
 function App() {
+  const [startDate, setStartDate] = useState(new Date());
+
   return (<>
     <div className='row mt-3'>
       <div className='col-6'> <div className="ps-1"><IoMdArrowRoundBack  size={30}/></div></div>
@@ -15,10 +20,12 @@ function App() {
         <div className='col pt-5 text-center'><span className="circle"></span>
 </div>
        </div>
-       <div className='row pts'>
-        <div className='col banner'>
+       <div className='row pts banner'>
+        <div className='col '>
           <h2 className='cp'>Schedule a visit</h2>
-        </div>
+          <DatePicker className='my' selected={startDate} onChange={date => setStartDate(date)} />
+
+        </div><div className='col-6'></div>
        </div>
     </>
   )
